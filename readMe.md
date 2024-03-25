@@ -32,3 +32,9 @@ Example: Review the code changes in the pull request for the new feature branch.
 Once the code review is complete, the pull request can be merged into the main codebase. This is the final step in the SCM life cycle.
 
 Example: Merge the pull request for the new feature branch into the main codebase.
+
+
+The main reason sets data structure is not a good data structure for this scenario:
+In the scenario, we need to keep track of the number of times each political party has a specific number of registered members, which requires a data structure that can store both the values and their frequencies. Sets cannot store frequency information, so it won't be possible to extract the information required for the scenario.
+
+A better data structure for this scenario would be a dictionary, where keys represent the number of registered members and values represent the number of political parties with that many registered members. This would allow for efficient storage and retrieval of the information needed.
